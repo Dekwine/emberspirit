@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>яоченьустал</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="header">
+          <div class="container">
+      
+        
+        <img src="images/logo.png" alt="">
+        <nav class="header-nav">
+            <a>Каталог</a>
+            <a>Галерея</a>
+            <a>О лаборатории</a>
+            <a>Контакты</a>
+        </nav>
+
+
+
+
+        <img src="images/search.png" alt="">
+        <img src="images/log-in.png" alt="">
+        </div>
+    
+    </header>
+    <main>
+         
+        <div class="hero">
+           <div class="container">
+           
+            <h1> Крупнейшая коллекция природных артефактов</h1>
+            <p>Являясь всего лишь частью общей картины, интерактивные прототипы, которые представляют собой яркий пример европейского типа политической и социальной культуры.</p>
+                <div class="search">
+                <a href="#">Исследовать</a>
+                <img src="images/Arrow 1.svg" alt="">
+                </div>
+                </div>
+
+
+
+        </div>
+      
+<div class="artefacts">
+  <div class="container cards">
+
+    <div class="card">
+      <img src="images/Layer 3.png" alt="">
+      <h3>Fig. 1 (plant)</h3>
+      <p>Имеется спорная точка зрения, гласящая примерно следующее: активно развивающиеся страны третьего мира своевременно верифицированы.</p>
+      <a href="#">Подробнее</a>
+    </div>
+
+    <div class="card">
+      <img src="images/Layer 2.png" alt="">
+      <h3>Fig. 2 (flower)</h3>
+      <p>Прежде всего, синтетическое тестирование влечет за собой процесс внедрения и модернизации условий.</p>
+      <a href="#">Подробнее</a>
+    </div>
+
+    <div class="card">
+      <img src="images/Layer 4.png" alt="">
+      <h3>Fig. 3 (leaf)</h3>
+      <p>Лишь непосредственные участники прогресса неоднозначны и будут в равной степени предоставлены сами себе для работы.</p>
+      <a href="#">Подробнее</a>
+    </div>
+
+    <div class="card">
+      <img src="images/Layer 1 1.png" alt="">
+      <h3>Fig. 4 (wood)</h3>
+      <p>Базовый вектор развития не даёт нам иного выбора, кроме определения новых предложений.</p>
+      <a href="#">Подробнее</a>
+    </div>
+
+  </div>
+   <div class ="pagination"> 
+     <img src="images/Arrow 2.png" alt="">
+        <p>1 из 3</p>
+            
+            <img src="images/Arrow 1.png" alt="">
+            
+</div>
+<div class="section-title"><h2>Новые артефакты</h2></div>
+<div class="container new-artefacts">
+
+<div class="images">
+<div class="group1">
+<img src="images/1.png" alt="">
+<img src="images/2.png" alt="">
+<img src="images/3.png" alt="">
+
+
+</div>
+<div class="group2">
+
+<img src="images/4.png" alt="">
+<img src="images/5.png" alt="">
+<img src="images/6.png" alt="">
+<img src="images/7.png" alt="">
+
+
+</div>
+
+
+
+
+</div>
+<aside class="aside">
+  <div class="sidebar">
+<h3>Kurische Nehrung 24</h3>
+<p>Вот вам яркий пример современных тенденций - начало повседневной работы по формированию позиции выявляет срочную потребность методов управления процессами. </p>
+<p>Есть над чем задуматься: представители 
+  современных социальных 
+  резервов своевременно
+   верифицированы.</p>
+<div class="read-more">
+    <a href="#"> Читать далее</a>
+<img src="images/Arrow 1.svg" alt="">
+</div>
+  </div>
+</aside>
+
+</div>
+</div>
+<div class="help">
+  <div class="container">
+    <h2>Помочь проекту</h2>
+<p>Равным образом, экономическая повестка сегодняшнего дня не даёт нам иного выбора, кроме определения прогресса профессионального сообщества. Как принято считать, элементы политического процесса рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. </p>
+
+
+
+  <form id="registerForm" class="registration">
+    <input class="name" type="text" id="name" placeholder="Имя" required>
+    <input class="email" type="email" id="email" placeholder="Email" required>
+    <button class="btn" type="submit">Отправить</button>
+</form>
+
+<p id="message"></p>
+</div>
+</div>
+
+
+
+<script>const form = document.getElementById("registerForm");
+const message = document.getElementById("message");
+
+form.addEventListener("submit", function(e) {
+    e.preventDefault(); // чтобы страница не перезагружалась
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+
+    if (name.length < 2) {
+        message.textContent = "Имя слишком короткое";
+        message.style.color = "red";
+        return;
+    }
+
+    if (!email.includes("@")) {
+        message.textContent = "Некорректный email";
+        message.style.color = "red";
+        return;
+    }
+
+    message.textContent = "Регистрация успешна!";
+    message.style.color = "green";
+
+    console.log({ name, email });
+});</script>
+
+<footer>
+  <div>
+<img src="images/Frame.png" alt="">
+<img src="images/Frame2.png" alt="">
+<img src="images/Frame3.svg" alt="">
+<img src="images/Frame4.png" alt="">
+
+  </div>
+  <div><img src="images/f&b ® 2020.png" alt=""></div>
+  
+</footer>
+    </main>
+</body>
+</html> 
